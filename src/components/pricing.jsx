@@ -9,7 +9,7 @@ import StarIcon from '@material-ui/icons/StarBorder';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -87,6 +87,9 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
+    <div id='pricing'>
+    
+    <Fade>
     <React.Fragment>
       {/* <CssBaseline /> */}
       {/* Hero unit */}
@@ -142,5 +145,7 @@ export default function Pricing() {
         </Grid>
       </Container>
     </React.Fragment>
+    </Fade>
+    </div>
   );
 }

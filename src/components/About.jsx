@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Profile from './Profile'
-
+import Zoom from 'react-reveal/Zoom';
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -22,7 +22,8 @@ function About (){
     const classes = useStyles();
     console.log(Profile)
     return (
-            <div className='about'>
+            <div className='about' id='about'>
+              <Zoom>
                 <Typography component="h2" variant="h3" align="center" color="textPrimary" gutterBottom>
                     The Team
                 </Typography>
@@ -44,6 +45,7 @@ function About (){
 
             </div>
             <hr style={{width: '80%', align: 'center'}}/>
+            </Zoom>
             </div>
 
         

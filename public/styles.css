@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+html {
+    scroll-behavior: smooth;
+   }
+
 body{
     margin: 0;
 
+}
+.overlay{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header-content{
+    position: absolute;
+    top: 30%;
+    font-family: 'Zilla Slab Highlight', cursive;
+    text-align: left;
+    left: 20%;
+    right: 20%;
+    opacity: 0.8;
+    right: 0;
+    z-index: 8;
+    color: cornsilk;
+    display: block;
+    ;
 }
 .navbar{
     background-color: #40394a;
@@ -26,6 +57,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 1%;
+    
     
 }
 
@@ -54,7 +86,7 @@ body{
 }
 .slide-change{
     opacity: 1;
-    transform: scale(1.08);
+    transform: scale(1.18);
     transition-duration: 1s;
 }
 .const-slide{
@@ -64,13 +96,16 @@ body{
 
 .about{
     /* margin-left: 15%; */
-    margin-top: 5%;
+    margin-top: 4%;
     text-align: center;
     margin-bottom: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1%;
 }
 .contact{
     margin-top: 5%;
     text-align: center;
+    margin-bottom: 5%;
 }
 form{
     display: block;
@@ -81,4 +116,12 @@ form{
     margin-top: 5%;
     margin-left: 30%;
     margin-right: 30%;
+}
+
+.footer{
+    text-align: center;
+    background-color: #1c1427;
+    padding: 1%;
+    color: #7eca9c;
+    
 }
